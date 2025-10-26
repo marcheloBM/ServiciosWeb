@@ -16,6 +16,7 @@ android {
         versionName "1.1"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnit4"
     }
 
     buildTypes {
@@ -51,6 +52,8 @@ dependencies {
 
     // Spring Android está descontinuado, pero si lo necesitas:
     implementation 'org.springframework.android:spring-android-rest-template:1.0.1.RELEASE'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 }
 
 repositories {
