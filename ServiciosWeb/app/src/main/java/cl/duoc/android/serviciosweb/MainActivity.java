@@ -18,6 +18,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        // Verificar actualización al iniciar
+        UpdateChecker.checkForUpdate(this);
     }
 
     private void irActividad(Class cls) {
